@@ -1,0 +1,52 @@
+* {
+    font-size: 30px;
+}
+
+div.color.text-color {
+    background-color: red;
+}
+
+div.color {
+    color: green;
+}
+
+
+ul strong {
+    background-color: blue;
+}
+
+ul > strong { /* Первый дочерний элемент */
+    background-color: blue;
+}
+
+ul .gray {
+    background-color: gray;
+}
+
+li.color ~ li { /* Подсветит жёлтым все li снизу кроме того к которому привязывайетесь через класс */
+    background-color: yellow;
+}
+
+li.color + li { /* Подсветит жёлтым 1 li снизу кроме того к которому привязывайетесь через класс */
+    background-color: yellow;
+}
+
+span.color {
+    color: green;
+}
+
+section {
+    background-color: burlywood;
+    border: 1px solid saddlebrown;
+    /* margin: TOP, RIGHT, BOTTOM, LEFT. margin: 10px; - all */
+    margin: 10px 10px 10px 10px;
+    box-sizing: border-box;
+
+    /*
+    margin: TOP/BOTTOM, LEFT/RIGHT
+    margin: 10px 20px; 
+
+
+    PADDING - аналогично 
+    */
+}

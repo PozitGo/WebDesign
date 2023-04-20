@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 2000px;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+}
+
+.items { /* Родитель всегда должен быть relative, а потомок - absolute*/
+    position: relative;
+    background-color: antiquewhite;
+}
+
+.red {
+    background-color: red;
+    position: fixed; /* Фиксирует элемент на странице, он будет на 1 месте даже если листать страницу, подходит для навигации и каких-то закрепов */
+}
+
+.green {
+    background-color: green;
+    position: absolute;
+    /* absolute - игнорирует существование данного квадрата, и остальные поднялись на 1 выше */
+}
+/* Свойства top и т.д не будут работать без position: relative; */
+/* static - значение по умолчанию */
+.blue {
+    background-color: blue;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    right: 50px;
+    bottom: 50px;
+    z-index: -1;
+    /* z-index засовывает синий квадрат под тот на который он налазил сверху. Значение 1 наоборот, синий квадрат налезет поверх с пересекающимся */
+}
+
+.black {
+    background-color: black;
+    position: sticky; /* Фиксирует элемент в контейнере, бегает при скоролле в пределах контейнера по экрану, после удаления из зоны контейнера - пропадает*/
+}
+
+.yellow {
+    background-color: yellow;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+
+    /*Квадрат по середине*/
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Авторизация</title>
+    <style>
+      body {
+        background: radial-gradient(circle at center, #00BFFF, #8A2BE2);
+        font-family: Arial, sans-serif;
+      }
+
+      .auth {
+        background-color: #333;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        margin: 100px auto;
+        padding: 30px;
+      }
+
+      .auth h1 {
+        color: white;
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      input {
+        background-color: #616060;
+      }
+
+      .auth input[type="text"],
+      .auth input[type="password"] {
+        border: none;
+        border-radius: 5px;
+        color: white;
+        box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.1);
+        display: block;
+        font-size: 16px;
+        margin-bottom: 20px;
+        padding: 10px;
+        width: 95%;
+      }
+
+      .auth input[type="text"]::placeholder,
+      .auth input[type="password"]::placeholder {
+        color: #aaaaaa;
+      }
+
+      .auth input[type="submit"] {
+        background: #8A2BE2;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        display: block;
+        cursor: pointer;
+        font-size: 16px;
+        padding: 10px;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      .auth input[type="text"]:hover,
+      .auth input[type="password"]:hover,
+      .auth input[type="submit"]:hover {
+        box-shadow: 5px 1px 20px rgba(138, 43, 226, 0.5);
+      }
+
+      .auth input[type="submit"]:hover {
+        background: #964eda;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="auth">
+      <h1>Авторизация</h1>
+      <form>
+        <input type="text" placeholder="Имя пользователя" />
+        <input type="password" placeholder="Пароль" />
+        <input type="submit" value="Войти"/>
+      </form>
+    </div>
+  </body>
+</html>

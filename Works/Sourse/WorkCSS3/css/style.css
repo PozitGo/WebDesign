@@ -1,0 +1,87 @@
+a {
+    color: black;
+}
+
+a:hover { /*Фон при наведении на элемент*/
+    color: brown;
+}
+
+a:active { /*Фон при зажатии на элемент*/
+    color: green;
+}
+
+div:hover {
+    color: brown;
+}
+
+div:active {
+    color: green;
+}
+
+input:focus { /*Фон при нажатии на элемент*/
+    background-color: aqua;
+}
+
+input:required {  /*Поле с обязательным заполнением*/
+    background-color: aquamarine;
+}
+
+input:disabled {
+    background-color: aliceblue;
+}
+
+li:first-child { /*Последний вложенный вложенный элемент*/
+    background-color: aqua;
+}
+
+li:last-child { /*Первый вложенный вложенный элемент*/
+    background-color: red;
+}
+
+p:first-child { /*Последний вложенный элемент*/
+    background-color: blue;
+}
+
+p:first-of-type { /*Последний элемент*/
+    background-color: darkblue;
+}
+
+p:last-of-type { /*Первый элемент*/
+    background-color: darkgreen;
+}
+
+ul li:first-of-type { /* Последний элемент даже в дочерних элементах */
+    background-color: cornflowerblue;
+}
+
+ul li:nth-child(3) { /* Только 3 элемент */
+    background-color: coral;
+}
+
+ul li:nth-child(odd) { /* Каждый нечётный элемент */
+    background-color: coral;
+} 
+
+ul li:nth-child(even) { /* Каждый чётный элемент */
+    background-color: coral;
+} 
+
+span:only-child { /* Стиль работает на 1 потомка, если их больше 1 - стиль не работает */
+    color: red;
+}
+
+span:not(.not-color) { /* Указываем класс который не нужно выделять, все остальные выделятся */
+    background-color: darkgoldenrod;
+}
+
+p::before { /* В начало текста каждого параграфа будет добавлен смайлик */
+    content: '=)';
+}
+
+p::after { /* В конец текста каждого параграфа будет добавлен смайлик */
+    content: '=)';
+}
+
+p:hover::after { /* В конец текста каждого параграфа будет добавлен смайлик при наведении на параграф*/
+    content: '=)';
+}

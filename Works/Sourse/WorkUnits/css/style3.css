@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn {
+    background-color: black;
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 1rem  1.5rem;
+    font-size: .8rem;
+    margin: 2rem;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+
+    background: #333 url(/Works/Sourse/WorkUnits/images/fon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+
+    height: 100vh; /* Адаптивно растягивает элементы, 100 vh ставит адаптивный размер на всю страницу */
+    width: 50vw; /* Адаптивно разделит экран браузера горизонтально - | пополам */
+}
+
+section {
+    height: 400px;
+}
+

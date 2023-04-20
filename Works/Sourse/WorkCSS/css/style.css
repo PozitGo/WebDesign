@@ -1,0 +1,26 @@
+
+.Bravl {
+    width: 250px;
+    height: 100px;
+}
+
+#Sich {
+    width: 600px;
+    height: 300px;
+}
+
+.blocks {
+    width: 300px;
+    height: 100px;
+    color: darkgreen;
+}
+
+.black {
+    border: solid 1px black;
+    background-color: red;
+}
+
+.red {
+    border: solid 1px red;
+    background-color: rgb(23, 43, 45);
+}

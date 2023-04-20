@@ -1,0 +1,196 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.headerTxt
+{
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-img
+{
+    background: black
+      url(https://static.pexels.com/photos/248515/pexels-photo-248515.png);
+    width: 100%;
+    height: 350px;
+    z-index: -1;
+    opacity: 0.9;
+    order: 1;
+}
+
+.aside1
+{
+    order: 2;
+    width: 95%;
+    height: 180px;
+    padding: 20px;
+}
+
+.aside-h2 
+{
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+#buttonStart
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+button
+{
+    padding: 1em;
+    margin: 10px;
+    background-color: #2b2a2a;
+    border: 1px solid gray;
+}
+
+button:hover
+{
+    background-color: #1b1b1b;
+}
+
+article
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    margin: 1em;
+    box-sizing: border-box;
+  
+}
+
+p {
+    width: 35em;
+    height: 2em;
+}
+
+.p-color
+{
+    color: black;
+}
+
+main
+{
+    order: 3;
+    background-color: #333;
+    height: 325px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.content-a
+{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.text-a
+{
+    padding: 10px;
+    width: 250px;
+    height: auto;
+    background-color: white;
+    text-align: center;
+}
+
+.image-abc
+{
+    width: 270px;
+    height: 110px;
+}
+
+h3 {
+    color: black;
+    background-color: white;
+}
+
+.aside2 {
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    order: 4;
+    width: 95%;
+    height: 100px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.text-b
+{
+    padding: 30px;
+}
+
+.asideThree
+{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    display: flex;
+}
+
+.BlockOne
+{
+    padding: 30px;
+    background-color: rgb(83, 83, 230);
+    align-items: center;
+    width: 50%;
+}
+
+.BlockTwo
+{
+    background-color: #333;
+    padding: 30px;
+    color: black;
+    align-items: center;
+    width: 50%;
+}
+
+.BlockOne-h2
+{
+    padding: 20px;
+}
+
+.BlockTwo-h2
+{
+    padding: 20px;
+}
+
+footer
+{
+    background-color: black;
+    width: 100%;
+    height: 5em;
+    display: flex;
+    align-items: center;
+}
+
+.foother-sectionOne
+{
+    text-align: center;
+    width: 50%;
+}
+
+.foother-sectionTwo
+{
+    text-align: center;
+    width: 50%;
+}
+

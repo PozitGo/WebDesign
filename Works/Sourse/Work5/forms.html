@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work5</title>
+</head>
+<body>
+    <h1>HTML Forms</h1>
+
+    <h2>Login Form</h2>
+    <form action="#" method="get">
+        <label for="login">Login</label>
+        <input type="text" name="login" placeholder="login">
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="password">
+        <button type="submit">Send</button>
+    </form>
+
+    <h2>File <Form:post></Form:post></h2>
+    <form action="#" method="post">
+        <label for="avatar">Avatar</label>
+        <input type="file" name="avatar" accept="image/png, image/jpeg">
+        <button type="submit">Send</button>
+    </form>
+
+    <h2>Color Form</h2>
+    <form action="#" method="post">
+        <input type="color" name="color" value="#F1F1F1">
+        <label for="color"></label>
+    </form>
+
+    <h2>Number Form</h2>
+    <form action="#" method="post">
+        <label for="Age">Age</label>
+        <input type="number" name="Age" min="18" max="20" step="2" value="18">
+    </form> 
+    
+
+    <h2>Selected Form</h2>
+    <form action="#" method="post">
+        <label for="phone">Choose your phone:</label>
+        <select name="phone" id="phone">
+            <option value="">---YourPhone----</option>
+            <option value="bomj" selected>Мать смирновой</option>
+            <option value="apple" disabled>Айфон</option>
+        </select>
+    </form>
+
+    <h2>CheckBox Form</h2>
+    <form action="#" method="post">
+        <input type="checkbox" name="checkbox" id="1">
+        <label for="checkbox">Yes</label>
+        <input type="checkbox" name="checkbox" id="1" disabled>
+        <label for="checkbox">Yes</label>
+        <input type="checkbox" name="checkbox" id="1" checked>
+        <label for="checkbox">Yes</label>
+    </form>
+
+    <h2>Radio Form</h2>
+    <form action="#" method="post">
+        <input type="radio" name="radio" checked>
+        <label for="radio">Yes</label>
+        <input type="radio" name="radio">
+        <label for="radio">No</label>
+    </form>
+
+    <h2>Slider Form</h2>
+    <form action="#" method="post">
+        <input type="range" name="volume" id="volume" min="100" max="1000" value="500" step="10">
+        <output class="volue-output"></output>
+    </form>
+    
+    <script>
+        const volume = document.querySelector('#volume');
+        const output = document.querySelector('.volue-output');
+        output.textContent = volume.value;
+
+        volume.addEventListener('input', () => 
+        {
+            output.textContent = volume.value;
+        });
+    </script>
+
+    <form action="#" method="post">
+        <label for="name">Your Name</label>
+        <input type="text" name="name" placeholder="Your Name">
+        <label for="textarea"></label>
+        <textarea name="textarea" id="1" cols="30" rows="10"></textarea>
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>

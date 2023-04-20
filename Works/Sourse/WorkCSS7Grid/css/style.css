@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.items {
+    height: 400px;
+    background-color: white;
+
+    display: grid; /* Подключение */ /* repeat(4, auto) для быстрой записи, первое значение кол-во колонок-столбцов, второе их размеры */
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Пример деления экрана по 25% фигуры будут идти горизонтальными полосами 50% 50% 50% 50%*, можно сжимать проценты до 100 и в одну запись */
+    grid-template-rows: 100px, 30px;
+    grid-auto-rows: 100px 30px; /* работает на все строки, 1-2, 1-2, 1-2 */
+    grid-auto-flow: column; /* Элемент начинают добавлятся поочередно в каждый ряд, а не добавляются снизу или в свободные места */
+    /* Значение auto делит по ровну, значения можно задавать и в пикселях */
+    /* еденица измерения fraction (fr) 1 = 25%, 2=50% и т.д */
+    /* minmax(Мин значение, макс значение), будет видно при сжатии страницы  grid-template-columns: 1fr, minmax(350px, 1fr), 1fr, 1fr */
+    /* Свойства ниже для отступов между столбцами и строками */
+    column-gap: 5px;
+    row-gap: 5px;
+    /* ROW COLUMN */
+    gap: 5px;
+
+    grid-auto-flow: dense; /* Позволяет элементам которые перемешаем через grid-column и row не тащить за собой элементы рядом, смещается только 1 элемент */
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+
+    grid-column-start: 9;
+    grid-column-end: 10;
+    /* Аналог записи ниже */
+    grid-column: 9 / 10; /* Стал на 9 позицию заняв 10 позиций, 10 это столько пространств равных себе он заберёт */
+    grid-column: 7 / span 4; /* Аналогичная запись, -1 конец блока */
+    grid-row: 2 / -1; /* Появляется со 2 строки и тянется до конца блока */
+
+    /* Можно использовать свойства*/
+    justify-content: space-between; /* space-around, evenly */
+    align-content: end;
+    /* align-content  justify-content, если 1 значение для двоих, можно ставить одно*/
+    place-content: center end ;
+}
+
+.blue {
+    background-color: blue;
+}

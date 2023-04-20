@@ -1,0 +1,151 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.wrapper {
+
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "header" "asideOne" "main" "asideOneBlock" "asideTwoBlock" "foother";
+}
+
+.All-Header {
+    grid-area: header;
+    width: 100%;
+    min-height: 350px;
+    display: grid;
+    align-content: center;
+    text-align: center;
+}
+
+.All-Main {
+    grid-area: main;
+    width: 100%;
+    background-color: #333;
+    align-content: center;
+    text-align: center;
+    padding: 1em;
+}
+
+.All-Foother {
+    grid-area: foother;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    background-color: black;
+    text-align: center;
+    align-items: center;
+    grid-template-areas: "FootherOne", "FootherTwo";
+    width: 100%;
+    height: 75px;
+}
+
+.Foother-section-one {
+    grid-area: FootherOne;
+}
+
+.Foother-section-two {
+    grid-area: FootherTwo;
+}
+
+aside {
+    width: 100%;
+}
+
+.aside-Top {
+    background-color: white;
+    grid-area: asideOne;
+    text-align: center;
+    width: 100%;
+    padding: 1em;
+}
+
+.aside-TopBlock {
+    background-color: white;
+    grid-area: asideOne;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    text-align: center;
+    align-content: center;
+    padding: 1em;
+    margin: 1em;
+}
+
+.aside-bottom {
+    grid-area: asideOneBlock;
+}
+
+.aside-bottom-one-block {
+    padding: 1em;
+    display: grid;
+    text-align: center;
+    grid-area: asideOneBlock;
+}
+
+#h2-header-aside-bottom-one-block {
+    padding: 1em;
+}
+
+.aside-bottom-two-block {
+    grid-area: asideTwoBlock;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+}
+
+#section-backgroundOneBlock {
+    padding: 3.5em;
+    background-color: rgb(105, 105, 223);
+}
+
+#section-backgroundTwoBlock {
+    padding: 3.5em;
+    background-color: #333;
+}
+
+.margin-Block-text {
+    margin: 1.5em;
+}
+
+.section-inline {
+    display: inline-block;
+    margin: 0.5em;
+}
+
+.color-white {
+    color: white;
+}
+
+.image-background {
+    width: 100%;
+    background-color: black;
+    background-image: url(https://static.pexels.com/photos/248515/pexels-photo-248515.png);
+    opacity: 0.9;
+}
+
+.button-header {
+    background-color: #1a1a1a;
+    padding: 1em;
+    border: 1px solid gray;
+    color: white;
+    margin: 20px;
+}
+
+.image-technologies {
+    height: 150px;
+    width: 300px;
+}
+
+.text-technologies {
+    max-height: 150px;
+    max-width: 300px;
+    padding: 1em;
+    text-align: center;
+    background-color: white;
+}

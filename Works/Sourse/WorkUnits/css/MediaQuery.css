@@ -1,0 +1,10 @@
+@media (max-width:600px) {
+
+    header {
+        background: #333;
+    }
+
+    section {
+        font-size: 5rem;
+    }
+}

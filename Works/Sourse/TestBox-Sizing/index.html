@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        * {
+          margin: 10px;
+        }
+
+        .box1 {
+          background: #f0f0f0; /* Цвет фона */
+          width: 300px; /* Ширина блока */
+          padding: 10px; /* Поля */
+          border: 2px solid #000; /* Параметры рамки */
+        }
+        .box2 {
+          background: #fc0; /* Цвет фона */
+          width: 300px; /* Ширина блока */
+          padding: 10px; /* Поля */ 
+          border: 2px solid #000; /* Параметры рамки */
+          box-sizing: border-box; /* Ширина блока с полями */
+        }
+      </style>
+    </head>
+    <body>
+      <div class="box1">
+        Ширина с учетом значения свойства width, полей и
+        границ.
+      </div>
+      <div class="box2">
+        Ширина равна значению свойства width.
+      </div>
+</body>
+</html>

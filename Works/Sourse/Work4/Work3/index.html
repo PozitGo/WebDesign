@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/sytyle.css" />
+        <title>Traversy Media</title>
+    </head>
+    <body>
+        <form action="#" method="post">
+            <div>
+                <p>Имя</p>
+                <input tabindex="1" name="username" type="text">
+            </div>
+            <div>
+                <p>Пароль</p>
+                <input tabindex="2" name="userpassword" type="password"/>
+            </div>
+            <div>
+                <p>Телефон</p>
+                <input tabindex="3" name="phonenumberuser" type="tel">
+            </div>
+            <div>
+                <p>Пол</p>
+                <p><input checked tabindex="4" type="radio" name="gender" value="man">Мужской</p>
+                <p><input type="radio" tabindex="4" name="gender" value="women">Женский</p>
+            </div>
+            <div>
+                <p>Имущество</p>
+                <p><input checked tabindex="5" type="checkbox" name="check1">Велик</p>
+                <p><input type="checkbox" tabindex="6" name="check2">Машина</p>
+                <p><input disabled type="checkbox" tabindex="7" name="check3">Квартира</p>
+            </div>
+            <div>
+                <p>Дополнительная информация</p>
+                <textarea tabindex="8" name="info"></textarea>
+            </div>
+            <div>
+                <p>Прикрепить фото</p>
+                <input tabindex="9" type="file" name="userphoto">
+            </div>
+            <div>
+                <p>Любимый цвет</p>
+                <select tabindex="10" name="color">
+                    <option value="red">Красный</option>
+                    <option value="blue">Синий</option>
+                    <option value="green">Зелёный</option>
+                </select>
+            </div>
+           <div>
+
+           </div>     
+                <p>Действия</p>
+                <button tabindex="11" type="submit">Отправить</button> 
+                <button tabindex="12" type="reset">Очистить</button>
+            </div>
+        </form>
+    </body>
+</html>
